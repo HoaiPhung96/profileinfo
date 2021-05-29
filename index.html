@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--
+Product Name: CARD PROFILE ThemeAuthor: Mr. Hoai Phung.
+Contact: hoaiphung9x@gmail.com
+Follow: https://www.facebook.com/HoaiPhung1996/
+Like: https://www.facebook.com/HoaiPhung1996/
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.-->
+<html lang="en">
+<!--begin::Head-->
+
+<head>
+    <!-- <base href="../../../"> -->
+    <meta charset="utf-8" />
+    <title>HP | Card Profile</title>
+    <meta name="description" content="Card Profile by Hoai Phung" />
+    <meta name="keywords" content="Card, bootstrap, Angular 10, Card Profile by Hoai Phung, Card Profile, Hoai Phung, HP" />
+    <link rel="canonical" href="Https://preview.keenthemes.com/start" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+    <link href="./assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_body" class="bg-white header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+    <!--begin::Main-->
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Authentication - Two-stes -->
+        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-size1: 100% 50%; background-image: url(./assets/media/svg/illustrations/progress.svg)">
+            <!--begin::Content-->
+            <div class="d-flex flex-center flex-column flex-column-fluid p-5 pb-lg-5">
+                <!--begin::Logo-->
+                <!-- <a href="index.html" class="mb-12">
+                    <img alt="Logo" src="./assets/media/logos/logo-2-dark.svg" class="h-45px" />
+                </a> -->
+                <h1 class="text-dark mb-5"> PROFILE INFORMATION </h1>
+                <!--end::Logo-->
+                <!--begin::Wrapper-->
+                <div class="w-lg-550px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
+                    <!--begin::Form-->
+                    <div class="form w-100 mb-10" novalidate="novalidate" id="kt_sing_in_two_steps_form">
+                        <!--begin::Icon-->
+                        <div class="card-body d-flex flex-center flex-column">
+                            <!--begin::Avatar-->
+                            <div class="symbol symbol-75px symbol-circle mb-5" onclick="generateQRCode()" data-bs-toggle="modal" data-bs-target="#kt_modal_share_earn">
+                                <img alt="Logo" class="mh-125px" src="./assets/media/avatars/150-13.jpg" alt="image">
+                                <div class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-white h-15px w-15px ms-n3 mt-n3"></div>
+                            </div>
+                            <!--end::Avatar-->
+                            <!--begin::Name-->
+                            <a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">Mr. Phung Pham
+								<span class="svg-icon svg-icon-1 svg-icon-primary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+										<path d="M10.0813 3.7242C10.8849 2.16438 13.1151 2.16438 13.9187 3.7242V3.7242C14.4016 4.66147 15.4909 5.1127 16.4951 4.79139V4.79139C18.1663 4.25668 19.7433 5.83365 19.2086 7.50485V7.50485C18.8873 8.50905 19.3385 9.59842 20.2758 10.0813V10.0813C21.8356 10.8849 21.8356 13.1151 20.2758 13.9187V13.9187C19.3385 14.4016 18.8873 15.491 19.2086 16.4951V16.4951C19.7433 18.1663 18.1663 19.7433 16.4951 19.2086V19.2086C15.491 18.8873 14.4016 19.3385 13.9187 20.2758V20.2758C13.1151 21.8356 10.8849 21.8356 10.0813 20.2758V20.2758C9.59842 19.3385 8.50905 18.8873 7.50485 19.2086V19.2086C5.83365 19.7433 4.25668 18.1663 4.79139 16.4951V16.4951C5.1127 15.491 4.66147 14.4016 3.7242 13.9187V13.9187C2.16438 13.1151 2.16438 10.8849 3.7242 10.0813V10.0813C4.66147 9.59842 5.1127 8.50905 4.79139 7.50485V7.50485C4.25668 5.83365 5.83365 4.25668 7.50485 4.79139V4.79139C8.50905 5.1127 9.59842 4.66147 10.0813 3.7242V3.7242Z" fill="#00A3FF"></path>
+										<path class="permanent" d="M14.8563 9.1903C15.0606 8.94984 15.3771 8.9385 15.6175 9.14289C15.858 9.34728 15.8229 9.66433 15.6185 9.9048L11.863 14.6558C11.6554 14.9001 11.2876 14.9258 11.048 14.7128L8.47656 12.4271C8.24068 12.2174 8.21944 11.8563 8.42911 11.6204C8.63877 11.3845 8.99996 11.3633 9.23583 11.5729L11.3706 13.4705L14.8563 9.1903Z" fill="white"></path>
+									</svg>
+								</span>
+							</a>
+                            <!--end::Name-->
+                            <!--begin::Position-->
+
+                            <div class="fw-bold text-gray-400 mb-6 text-hover-danger">IT Director at DDC Co., Ltd.</div>
+                            <!--end::Position-->
+                            <!--begin::Info-->
+                            <div class="d-flex flex-wrap mb-1">
+                                <!--begin::Stats-->
+                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3" onclick="CopyToClipboard('sample');return false;">
+                                    <div id="sample" class="fs-6 fw-bolder text-gray-400 text-hover-primary"><i class="bi bi-phone"></i> +84 976 546 832</div>
+                                    <!-- <div class="fw-bold text-gray-400">+84 976 546 832</div> -->
+                                </div>
+                                <!--end::Stats-->
+                            </div>
+                            <div class="d-flex flex-wrap mb-1">
+                                <!--begin::Stats-->
+                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3">
+                                    <div class="fs-6 fw-bolder text-gray-400 text-hover-primary"><i class="bi bi-envelope"></i> hoaiphung9x@gmail.com</div>
+                                    <!-- <div class="fw-bold text-gray-400">hoaiphung9x@gmail.com</div> -->
+                                </div>
+                                <!--end::Stats-->
+                            </div>
+                            <div class="d-flex flex-wrap fw-bold text-center fs-6 mb-2 pe-2">
+
+                                <a href="#" class="d-flex text-gray-400 text-hover-primary mb-2">
+                                    <!--begin::Svg Icon | path: icons/stockholm/Map/Marker1.svg-->
+                                    <span class="svg-icon svg-icon-4 me-1">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"></rect>
+											<path d="M5,10.5 C5,6 8,3 12.5,3 C17,3 20,6.75 20,10.5 C20,12.8325623 17.8236613,16.03566 13.470984,20.1092932 C12.9154018,20.6292577 12.0585054,20.6508331 11.4774555,20.1594925 C7.15915182,16.5078313 5,13.2880005 5,10.5 Z M12.5,12 C13.8807119,12 15,10.8807119 15,9.5 C15,8.11928813 13.8807119,7 12.5,7 C11.1192881,7 10,8.11928813 10,9.5 C10,10.8807119 11.1192881,12 12.5,12 Z" fill="#000000" fill-rule="nonzero"></path>
+										</g>
+									</svg>
+								</span>
+                                    <!--end::Svg Icon-->06 Le Loi street - Vinh Ninh ward - Hue city.</a>
+
+                            </div>
+                            <!--end::Info-->
+                            <!--begin::Follow-->
+
+                            <!--end::Follow-->
+                        </div>
+                        <!-- <div class="text-center mb-10">
+                            <img alt="Logo" class="mh-125px" src="./assets/media/svg/misc/smartphone.svg" />
+                        </div> -->
+                        <!--end::Icon-->
+                        <!--begin::Heading-->
+                        <div class="text-center mb-10">
+                            <!--begin::ATM-->
+                            <div class="card h-xl-100 flex-stack flex-wrap p-5 border-primary border border-dashed rounded">
+                                <!--begin::Info-->
+                                <div class="d-flex flex-column py-2">
+                                    <!--begin::Owner-->
+                                    <div class="d-flex align-items-center fs-4 fw-bolder mb-5">ACB Bank
+                                        <span class="badge badge-light-danger fw-bold fs-8 ms-2 me-2">VIP</span>
+                                        <span class="fs-6 fw-bold text-gray-400 flex-grow-1 text-end">Expires 03/25</span>
+                                    </div>
+                                    <!--end::Owner-->
+                                    <!--begin::Wrapper-->
+                                    <div class="d-flex align-items-center">
+                                        <!--begin::Icon-->
+                                        <img src="./assets/media/image/logo-acb.png" alt="" class="me-4 py-4 p-2 rounded bg-light-primary" style="height: 60px;">
+                                        <!--end::Icon-->
+                                        <!--begin::Details-->
+                                        <div>
+                                            <div class="fs-4 fw-bolder">PHAM VAN HOAI PHUNG</div>
+                                            <div class="fs-4 fw-bold text-gray-400">246334929</div>
+                                        </div>
+                                        <!--end::Details-->
+                                    </div>
+                                    <!--end::Wrapper-->
+                                </div>
+                                <!--end::Info-->
+                                <!--begin::Actions-->
+                                <!-- <div class="d-flex align-items-center py-2">
+                                    <button type="reset" class="btn btn-sm btn-white btn-active-light-primary me-3">Delete</button>
+                                    <button class="btn btn-sm btn-light btn-active-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card">Copy</button>
+                                </div> -->
+                                <!--end::Actions-->
+                            </div>
+                            <!--end::ATM-->
+                            <!--begin::Title-->
+                            <!-- <h1 class="text-dark mb-3">Two Step Verification</h1> -->
+                            <!--end::Title-->
+                            <!--begin::Sub-title-->
+                            <!-- <div class="text-muted fw-bold fs-5 mb-5">Enter the verification code we sent to</div> -->
+                            <!--end::Sub-title-->
+                            <!--begin::Mobile no-->
+                            <!-- <div class="fw-bolder text-dark fs-3">******7859</div> -->
+                            <!--end::Mobile no-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Icon-->
+                        <div class="rounded bg-light-primary text-center mb-10">
+                            <!--begin::Body-->
+                            <div class=" py-4">
+                                <!--begin::Icon-->
+                                <a href="https://www.facebook.com/HoaiPhung1996/" target="_blank" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/facebook-4.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                                <!--begin::Icon-->
+                                <a href="#" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/instagram-5.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                                <!--begin::Icon-->
+                                <a href="https://join.skype.com/invite/wWDQo0dF3zrq" target="_blank" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/skype-3.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                                <!--begin::Icon-->
+                                <a href="https://zalo.me/0976546832" target="_blank" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/zalo-1.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                                <!--begin::Icon-->
+                                <a href="https://github.com/HoaiPhung96" target="_blank" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/github.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                                <!--begin::Icon-->
+                                <a href="#" class="mx-4">
+                                    <img src="./assets/media/svg/brand-logos/pornhub.svg" class="h-30px my-2" alt="">
+                                </a>
+                                <!--end::Icon-->
+                            </div>
+                            <!--end::Body-->
+                        </div>
+                        <!--end::Icon-->
+                        <!--begin::Submit-->
+                        <!-- <div class="d-flex flex-center">
+                            <a href="#" onclick="generateQRCode()" class="badge badge-light-primary fw-bolder px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_share_earn">Share </a>
+                        </div> -->
+                        <!--end::Submit-->
+                    </div>
+                    <!--end::Form-->
+                    <!--begin::Notice-->
+                    <div class="text-center fw-bold fs-5 mb-6">
+                        <span class="text-muted me-1">Have a nice day!</span>
+                        <a href="#" class="link-primary fw-bolder fs-5 me-1">Thanks.</a>
+                    </div>
+                    <div class="separator d-flex flex-center">
+                        <span class="text-uppercase bg-white fs-7 fw-bold text-gray-400 px-3">HP</span>
+                    </div>
+                    <!--end::Notice-->
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Content-->
+            <!--begin::Footer-->
+            <div class="d-flex flex-center flex-column-auto p-10">
+                <!--begin::Links-->
+                <div class="d-flex align-items-center fw-bold fs-6">
+                    <a href="https://www.facebook.com/HoaiPhung1996/" class="text-muted text-hover-primary px-2">Contact</a>
+                    <a class="text-muted text-hover-danger px-2">©2021 Hoai Phung
+						<span class="svg-icon svg-icon-2">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<polygon points="0 0 24 0 24 24 0 24"></polygon>
+									<path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z" fill="#000000" fill-rule="nonzero"></path>
+								</g>
+							</svg>
+						</span></a>
+                </div>
+                <!--end::Links-->
+            </div>
+            <!--end::Footer-->
+        </div>
+        <!--end::Authentication - Two-stes-->
+    </div>
+    <!--end::Main-->
+    <!--begin::Modal - Share & Earn-->
+    <div class="modal fade" id="kt_modal_share_earn" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog modal-dialog-centered">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header pb-0 border-0 justify-content-end">
+                    <!--begin::Close-->
+                    <!--end::Close-->
+                </div>
+                <!--begin::Modal header-->
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y pt-0 pb-10">
+                    <!--begin::Wrapper-->
+                    <div class="mw-lg-600px mx-auto">
+                        <!--begin::Heading-->
+                        <div class="mb-4 text-center">
+                            <!--begin::Title-->
+                            <!-- <h3 class="mb-3">QR CODE</h3> -->
+                            <!--end::Title-->
+                            <!--begin::Description-->
+                            <div class="text-gray-400 fw-bold fs-5">If you need more info, please scan
+                                <a href="#" class="link-primary fw-bolder">QR Code</a>.</div>
+                            <!--end::Description-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Actions-->
+                        <div class="d-flex flex-center">
+                            <canvas id="qr-code"></canvas>
+                        </div>
+                        <!--end::Actions-->
+                        <div class="text-center mt-4">
+                            <a href="#" class="badge badge-light-primary fw-bolder px-4 py-3" data-bs-dismiss="modal">Ok</a>
+                        </div>
+                        <!--end::Wrapper-->
+                    </div>
+                    <!--end::Modal body-->
+                </div>
+                <!--end::Modal content-->
+            </div>
+            <!--end::Modal dialog-->
+        </div>
+        <!--end::Modal - Share & Earn-->
+        <!--begin::Javascript-->
+        <!--begin::Global Javascript Bundle(used by all pages)-->
+        <script src="./assets/plugins/global/plugins.bundle.js"></script>
+        <script src="./assets/js/scripts.bundle.js"></script>
+        <!--end::Global Javascript Bundle-->
+        <!--begin::Page Custom Javascript(used by this page)-->
+        <!-- <script src="./assets/js/custom/authentication/sign-in/two-steps.js"></script> -->
+        <!--end::Page Custom Javascript-->
+        <!--end::Global QR code-->
+        <script src="./assets/js/custom/qrcode/qrious.min.js"></script>
+        <!--end::Global QR code-->
+        <!--end::Javascript-->
+        <script>
+            function CopyToClipboard(id) {
+                var r = document.createRange();
+                r.selectNode(document.getElementById(id));
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(r);
+                document.execCommand('copy');
+                window.getSelection().removeAllRanges();
+            }
+        </script>
+        <!-- QR CODE JS -->
+        <script>
+            /* JS comes here */
+            var qr;
+            (function() {
+                document.getElementById("qr-code").style.display = "none";
+                qr = new QRious({
+                    element: document.getElementById('qr-code'),
+                    size: 160,
+                    value: ''
+                });
+            })();
+
+            function generateQRCode() {
+                var loc = window.location;
+                var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+                var qrtext = pathName;
+                document.getElementById("qr-code").style.display = "block";
+                // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
+                qr.set({
+                    foreground: 'black',
+                    size: 160,
+                    value: qrtext
+                });
+            }
+        </script>
+</body>
+<!--end::Body-->
+
+</html>
