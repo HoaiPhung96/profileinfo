@@ -313,7 +313,7 @@ License: For each use you must have a valid license purchased only from above li
                 // var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
                 // var hpurl = 'https://hoaiphung96.github.io';
                 var qrtext = loc.href;
-                if (qrtext != null) {
+                if (loc.host != null) {
                     document.getElementById("qr-code").style.display = "block";
                     // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
                     qr.set({
