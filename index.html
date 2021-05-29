@@ -316,7 +316,8 @@ License: For each use you must have a valid license purchased only from above li
             function generateQRCode() {
                 var loc = window.location;
                 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-                var qrtext = pathName;
+                var hpurl = 'https://hoaiphung96.github.io';
+                var qrtext = hpurl + pathName;
                 document.getElementById("qr-code").style.display = "block";
                 // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
                 qr.set({
