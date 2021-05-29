@@ -85,7 +85,6 @@ License: For each use you must have a valid license purchased only from above li
                                 <!--end::Stats-->
                             </div>
                             <div class="d-flex flex-wrap fw-bold text-center fs-6 mb-2 pe-2">
-
                                 <a href="#" class="d-flex text-gray-400 text-hover-primary mb-2">
                                     <!--begin::Svg Icon | path: icons/stockholm/Map/Marker1.svg-->
                                     <span class="svg-icon svg-icon-4 me-1">
@@ -95,8 +94,9 @@ License: For each use you must have a valid license purchased only from above li
 											<path d="M5,10.5 C5,6 8,3 12.5,3 C17,3 20,6.75 20,10.5 C20,12.8325623 17.8236613,16.03566 13.470984,20.1092932 C12.9154018,20.6292577 12.0585054,20.6508331 11.4774555,20.1594925 C7.15915182,16.5078313 5,13.2880005 5,10.5 Z M12.5,12 C13.8807119,12 15,10.8807119 15,9.5 C15,8.11928813 13.8807119,7 12.5,7 C11.1192881,7 10,8.11928813 10,9.5 C10,10.8807119 11.1192881,12 12.5,12 Z" fill="#000000" fill-rule="nonzero"></path>
 										</g>
 									</svg>
-								</span>
-                                    <!--end::Svg Icon-->06 Le Loi street - Vinh Ninh ward - Hue city.</a>
+								</span>06 Le Loi street - Vinh Ninh ward - Hue city.
+                                    <!--end::Svg Icon-->
+                                </a>
 
                             </div>
                             <!--end::Info-->
@@ -159,7 +159,7 @@ License: For each use you must have a valid license purchased only from above li
                             <!--begin::Body-->
                             <div class="py-4">
                                 <!--begin::Icon-->
-                                <a href="fb://https://www.facebook.com/100006861512769/" class="mx-4">
+                                <a href="https://www.facebook.com/HoaiPhung1996/" target="_blank" class="mx-4">
                                     <img src="./assets/media/svg/brand-logos/facebook-4.svg" class="h-30px my-2" alt="">
                                 </a>
                                 <!--end::Icon-->
@@ -310,16 +310,22 @@ License: For each use you must have a valid license purchased only from above li
 
             function generateQRCode() {
                 var loc = window.location;
-                var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-                var hpurl = 'https://hoaiphung96.github.io';
-                var qrtext = hpurl + pathName;
-                document.getElementById("qr-code").style.display = "block";
-                // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
-                qr.set({
-                    foreground: 'black',
-                    size: 160,
-                    value: qrtext
-                });
+                // var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+                // var hpurl = 'https://hoaiphung96.github.io';
+                var qrtext = loc.href;
+                if (qrtext != null) {
+                    document.getElementById("qr-code").style.display = "block";
+                    // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
+                    qr.set({
+                        foreground: 'black',
+                        size: 160,
+                        value: qrtext
+                    });
+                } else {
+                    document.getElementById("qr-code").style.display = "block";
+                    document.getElementById("qr-code").innerHTML = "Internet ERROR! Please check your internet";
+
+                }
             }
         </script>
 </body>
