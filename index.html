@@ -262,8 +262,8 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::QR code-->
                         <!--end::Actions-->
                         <div class="text-center mt-4">
-                            <a id="btn-download" href="#" class="badge badge-light-success text-hover-success fw-bolder px-4 py-3 me-3"><i class="bi bi-download fs-4"></i></a>
-                            <a href="#" class="badge badge-light-danger text-hover-danger fw-bolder px-4 py-3" data-bs-dismiss="modal"><i class="bi bi-x-circle fs-4"></i></a>
+                            <a id="btn-download" href="#" class="badge badge-light-success text-hover-success fw-bolder px-4 py-3 me-3"><i class="bi bi-download fs-2 m-2"></i></a>
+                            <a href="#" class="badge badge-light-danger text-hover-danger fw-bolder px-4 py-3" data-bs-dismiss="modal"><i class="bi bi-x-circle fs-2 m-2"></i></a>
                         </div>
                         <!--begin::Actions-->
                         <!--end::Wrapper-->
@@ -308,7 +308,7 @@ License: For each use you must have a valid license purchased only from above li
                 document.getElementById("qr-code").style.display = "none";
                 qr = new QRious({
                     element: document.getElementById('qr-code'),
-                    size: 250,
+                    size: 240,
                     value: ''
                 });
             })();
@@ -322,7 +322,7 @@ License: For each use you must have a valid license purchased only from above li
                     // document.getElementById("qr-text").innerHTML = "QR code for :" + qrtext + ".";
                     qr.set({
                         foreground: 'black',
-                        size: 250,
+                        size: 240,
                         value: qrtext
                     });
                 } else {
