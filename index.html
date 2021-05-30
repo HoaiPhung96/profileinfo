@@ -16,7 +16,7 @@ License: For each use you must have a valid license purchased only from above li
     <meta name="keywords" content="Card, bootstrap, Angular 10, Card Profile by Hoai Phung, Card Profile, Hoai Phung, HP" />
     <link rel="canonical" href="Https://preview.keenthemes.com/start" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/media/logos/favicon.png" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -111,7 +111,7 @@ License: For each use you must have a valid license purchased only from above li
                         <!--begin::Heading-->
                         <div class="text-center mb-10">
                             <!--begin::ATM-->
-                            <div class="card h-xl-100 flex-stack flex-wrap p-5 border-primary border border-dashed rounded">
+                            <div class="card h-xl-100 flex-stack flex-wrap p-3 border-primary border border-dashed rounded">
                                 <!--begin::Info-->
                                 <div class="d-flex flex-column py-2">
                                     <!--begin::Owner-->
@@ -256,14 +256,17 @@ License: For each use you must have a valid license purchased only from above li
                             <!--end::Description-->
                         </div>
                         <!--end::Heading-->
-                        <!--begin::Actions-->
+                        <!--begin::QR code-->
                         <div class="d-flex flex-center">
                             <canvas id="qr-code"></canvas>
                         </div>
+                        <!--end::QR code-->
                         <!--end::Actions-->
                         <div class="text-center mt-4">
-                            <a href="#" class="badge badge-light-primary fw-bolder px-4 py-3" data-bs-dismiss="modal">Ok</a>
+                            <a id="btn-download" href="#" class="badge badge-light-success text-hover-success fw-bolder px-4 py-3 me-3"><i class="bi bi-download fs-4"></i></a>
+                            <a href="#" class="badge badge-light-danger text-hover-danger fw-bolder px-4 py-3" data-bs-dismiss="modal"><i class="bi bi-x-circle fs-4"></i></a>
                         </div>
+                        <!--begin::Actions-->
                         <!--end::Wrapper-->
                     </div>
                     <!--end::Modal body-->
@@ -285,6 +288,8 @@ License: For each use you must have a valid license purchased only from above li
         <script src="./assets/js/custom/qrcode/qrious.min.js"></script>
         <!--end::Global QR code-->
         <!--end::Javascript-->
+
+        <!--begin::Copy To Clipboard-->
         <script>
             function CopyToClipboard(id) {
                 var r = document.createRange();
@@ -295,7 +300,8 @@ License: For each use you must have a valid license purchased only from above li
                 window.getSelection().removeAllRanges();
             }
         </script>
-        <!-- QR CODE JS -->
+        <!--end::Copy To Clipboard-->
+        <!--begin:: QR CODE JS -->
         <script>
             /* JS comes here */
             var qr;
@@ -311,7 +317,6 @@ License: For each use you must have a valid license purchased only from above li
             function generateQRCode() {
                 var loc = window.location;
                 // var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-                // var hpurl = 'https://hoaiphung96.github.io';
                 var qrtext = loc.href;
                 if (loc.host != null) {
                     document.getElementById("qr-code").style.display = "block";
@@ -328,6 +333,28 @@ License: For each use you must have a valid license purchased only from above li
                 }
             }
         </script>
+        <!--end:: QR CODE JS -->
+        <!-- Download image QR_Code -->
+        <script>
+            // Convert canvas to image
+            document.getElementById('btn-download').addEventListener("click", function(e) {
+                var canvas = document.querySelector('#qr-code');
+
+                var dataURL = canvas.toDataURL("image/png", 1.0);
+
+                downloadImage(dataURL, 'QR_Code.png');
+            });
+
+            // Save | Download image
+            function downloadImage(data, filename = 'QR_Code.png') {
+                var a = document.createElement('a');
+                a.href = data;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+            }
+        </script>
+        <!-- Download image QR_Code -->
 </body>
 <!--end::Body-->
 
